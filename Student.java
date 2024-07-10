@@ -1,8 +1,29 @@
+import java.util.Scanner;
+
 class Student{
     public static void main(String args[]){
+        
+        Scanner sc = new Scanner(System.in);
+
         StudentForm std1 = new StudentForm(); //Object creation
         StudentForm std2 = new StudentForm();
         StudentForm std3 = new StudentForm();
+
+        System.out.println("Enter name of first student");
+        String std1Name = sc.next();
+
+        System.out.println("Enter roll no of first student");
+        int std1Roll = sc.nextInt();
+
+        System.out.println("Enter marks of first student");
+        float std1Marks = sc.nextFloat();
+
+        System.out.println("Enter class of first student");
+        int std1Class = sc.nextInt();
+
+        System.out.println("Enter college name of first student");
+        String std1College = sc.next();
+
         
         std1.insert("MS Dhoni", 7, 77.7f, 12, 'A', "Xaviers College");
         std2.insert("Virat Kohli", 18, 60.0f, 12, 'B', "Viswaniketan");
