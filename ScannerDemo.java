@@ -11,10 +11,11 @@ class ScannerDemo{
     public static void main(String args[]){
         //ScannerDemo class(user defined class) -----> Scanner class(pre defined class)
         //Scanner class ---> variable + 
-        //Whenever we have to call/use any other class's methods then 
+
+        //Whenever we have to call/use any other class's methods or variable then 
         //                              we have to make object of that particular class
         
-        Scanner sc = new Scanner(System.in); //Object Creation
+        Scanner sc = new Scanner(System.in); //Object Creation   new ---> dynamic memory allocation
 
         int a,b,sum;
         System.out.print("Enter the value of a");
